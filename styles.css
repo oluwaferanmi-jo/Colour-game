@@ -131,16 +131,16 @@ h1 {
      }
 
     #colorOptions button {
-     width: 40px;
-     height: 40px;
+     width: 60px;
+     height: 60px;
      }
 
     .game-container {
-      max-width: 300px;
-      width: 90%;
-      height: 100vh;
+      max-width: 480px;
+      width: 100%;
+      height: 90vh;
       margin: 0 auto;
-      padding: 10px;
+      padding: 0;
        }
 
      #level {
@@ -148,17 +148,17 @@ h1 {
        }
   
       #colorBox {
-       width: 150px; 
-       height: 100px;
+       width: 250px; 
+       height: 150px;
        } 
       .game-container h1{
-       font-size: 1.2em;
+       font-size: 2em;
         }
        #newGameButton,
         #quitButton {
-         width: 100px;
+         width: 130px;
          height: 45px;
-         font-size: 14px;
+         font-size: 18px;
          }
 }
 
@@ -181,8 +181,8 @@ h1 {
   margin: auto;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 480px;
   text-align: center;
 }
 
