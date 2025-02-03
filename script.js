@@ -58,7 +58,7 @@ function startTimer() {
       document.getElementById("gameStatus").innerText = `Time up! 😔`;
      
       setTimeout(() => {
-        showPopup("Wrong Guess!", `Your score is ${score}`);
+        showPopup(" Sorry, Timeout😔!", `Your score is ${score}`);
       }, 1000);
       score = 0;
       level = 1;
@@ -113,11 +113,7 @@ function checkGuess(selectedColor) {
 }
 
 function quitGame() {
-  showPopup("Hey! Thanks for playing my game!", "Can't wait to see you again!");
-  setTimeout(() => {
     document.body.innerHTML = ""; 
-    document.body.style.backgroundColor = "#ffffff"; 
-  }, 3000);
 }
 
 function startGame() {
