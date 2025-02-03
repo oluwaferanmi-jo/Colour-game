@@ -127,13 +127,17 @@ h1 {
 @media (max-width: 480px) {
   
     #colorOptions {
-    grid-template-columns: repeat(3, 60px);
+    grid-template-columns: repeat(3, 80px);
+    display: grid;
+   
+    gap: 16px; 
+    padding: 10px;
      }
 
     #colorOptions button {
      width: 65px;
      height: 65px;
-     padding: 10px;
+    
      }
 
     .game-container {
