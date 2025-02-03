@@ -24,7 +24,7 @@ body {
 h1 {
   margin: 0;
   font-size: 2rem;
- 
+  color:#457b9d
 }
 
 #instructions {
@@ -131,8 +131,9 @@ h1 {
      }
 
     #colorOptions button {
-     width: 60px;
-     height: 60px;
+     width: 65px;
+     height: 65px;
+     padding: 10px;
      }
 
     .game-container {
@@ -151,14 +152,20 @@ h1 {
        width: 250px; 
        height: 150px;
        } 
+
       .game-container h1{
-       font-size: 2em;
+       font-size: 1.5em;
         }
+        
+       .game-container p{
+        font-size: 1.1em;
+       }
+
        #newGameButton,
         #quitButton {
          width: 130px;
          height: 45px;
-         font-size: 18px;
+         font-size: 16px;
          }
 }
 
