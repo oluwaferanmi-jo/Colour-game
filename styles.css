@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fdf6f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+.game-container {
+  max-width: 400px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+ 
+}
+
+#instructions {
+  margin: 5px 0 10px;
+}
+
+
+
+#colorBox {
+  width: 180px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  
+}
+
+
+#gameStatus {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+
+#colorOptions {
+  display: grid;
+  grid-template-columns: repeat(6, 60px); 
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+
+#colorOptions button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#colorOptions button:hover {
+  transform: scale(1.1);
+}
+
+
+#score {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.timer-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #4fa3ff, #1b6ec2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  animation: timerEffect 5s linear forwards;
+}
+@keyframes timerEffect {
+  0%   { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0.5; }
+}
+
+
+#newGameButton,
+#quitButton {
+  width: 120px;
+  height: 40px;
+  margin: 5px auto;
+  display: block;
+  background: linear-gradient(135deg, #5b9df7, #1b6ec2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+#newGameButton:hover,
+#quitButton:hover {
+  background: linear-gradient(135deg, #1b6ec2, #5b9df7);
+}
+
+
+@media (max-width: 480px) {
+  
+    #colorOptions {
+    grid-template-columns: repeat(3, 60px);
+     }
+
+    #colorOptions button {
+     width: 40px;
+     height: 40px;
+     }
+
+    .game-container {
+      max-width: 300px;
+      width: 90%;
+      height: 100vh;
+      margin: 0 auto;
+      padding: 10px;
+       }
+
+     #level {
+      display: none; 
+       }
+  
+      #colorBox {
+       width: 150px; 
+       height: 100px;
+       } 
+      .game-container h1{
+       font-size: 1.2em;
+        }
+       #newGameButton,
+        #quitButton {
+         width: 100px;
+         height: 45px;
+         font-size: 14px;
+         }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+}
+
+#popup-new-game {
+  width: 120px;
+  height: 40px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #5b9df7, #1b6ec2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+#popup-new-game:hover {
+  background: linear-gradient(135deg, #1b6ec2, #5b9df7);
+}
+

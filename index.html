@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Guessing Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="game-container">
+
+      <h1><b>Color Guessing Game🎨</b></h2>
+      <h2 id="level">Level 1</h1>
+      <p id="instructions">Guess the correct color!</p>
+
+  <div id="colorBox" data-testid="colorBox"></div>
+
+  <p id="gameStatus" data-testid="gameStatus">Pick a color</p>
+
+    <div id="colorOptions">
+      <!-- Dear mentors, my buttons will be generated dynamically -->
+    </div>
+
+  <p id="score" data-testid="score">Score: 0</p>
+
+    <div class="timer-container">
+          <div class="timer-circle">
+               <span id="timer">5</span>
+           </div>
+    </div>
+
+    <button id="newGameButton" data-testid="newGameButton">New Game</button>
+
+    <button id="quitButton">Quit</button>
+
+  </div>
+
+  <div id="popup" class="popup">
+       <div class="popup-content">
+          <h3 id="popup-message"></h3>
+          <p id="popup-score"></p>
+        <button id="popup-new-game" onclick="newGame()">New Game</button>
+       </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
